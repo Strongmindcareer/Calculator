@@ -1,0 +1,116 @@
+/* Body with Gradient Background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Glass Effect Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+  }
+  
+  /* Calculator Design */
+  .calculator {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  /* Display Screen */
+  .display {
+    background: rgba(255, 255, 255, 0.15);
+    color: #7efff5;
+    font-size: 2.5rem;
+    padding: 15px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Buttons Grid */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    box-shadow: 0 8px 20px rgba(255, 95, 109, 0.8);
+    transform: scale(1.05);
+  }
+  
+  /* Operator Buttons */
+  .operator {
+    background: #e91e63;
+  }
+  
+  .operator:hover {
+    background: linear-gradient(135deg, #ff5f6d, #e91e63);
+  }
+  
+  /* Clear Button */
+  .clear {
+    background: #ff6347;
+  }
+  
+  .clear:hover {
+    background: #ff4500;
+  }
+  
+  /* Equal Button */
+  .equal {
+    background: #4caf50;
+    grid-column: span 2;
+  }
+  
+  .equal:hover {
+    background: #45a049;
+  }
+  
+  /* Zero Button */
+  .zero {
+    grid-column: span 2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    .container {
+      width: 90%;
+    }
+    .btn {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
